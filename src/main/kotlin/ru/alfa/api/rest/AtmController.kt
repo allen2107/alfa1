@@ -14,7 +14,7 @@ class AtmController(
             @RequestParam(required = false, defaultValue = "") latitude: String,
             @RequestParam(required = false, defaultValue = "") longitude: String,
             @RequestParam(required = false, defaultValue = "false") payments: Boolean
-    ) = atmService.getNearestAtm()
+    ) = atmService.getNearestAtm(latitude, longitude, payments)
 
     @RequestMapping(value = ["/nearest-with-alfik"], method = [RequestMethod.GET])
     fun getNearestAtmWithAlfik() =
