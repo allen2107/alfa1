@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: alfa1
+application:
+  client:
+    alfa:
+      url: https://apiws.alfabank.ru/alfabank/alfadevportal/
+      client-id: 26ab764e-dadc-400c-aaee-86f80b04249a
+logging:
+  level:
+    ru.alfa: DEBUG
+    ROOT: DEBUG
